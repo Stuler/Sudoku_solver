@@ -32,4 +32,4 @@ deck[8][4] = 8
 deck[8][7] = 7
 deck[8][8] = 9
 
-print(deck)
+#print(deck)
