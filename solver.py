@@ -49,8 +49,8 @@ sects = [
 for j in range(1,10):
     temp_deck = deck
     for row in deck:
-        for i in range(len(row)):
-            column = row.index(i)
+        for i in row:
+            column = row[i]
             if (j not in row) or (j not in (row[column]) for row in deck) and (i == 0):
                 temp_deck.insert(column,j)
             else:
