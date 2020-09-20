@@ -37,4 +37,8 @@ table[4][2]= "42"
 table[4][3]= "43"
 table[4][4]= "44"
 
-print(table)
+for j in range(1,10):
+
+    for row in table:
+        for i in row:
+            print(i)

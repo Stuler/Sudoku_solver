@@ -48,14 +48,13 @@ sects = [
 
 for j in range(1,10):
     temp_deck = deck
-    for row in deck:
+    for row in temp_deck:
         for i in row:
-            column = row[i]
-            if (j not in row) or (j not in (row[column]) for row in deck) and (i == 0):
-                temp_deck.insert(column,j)
-            else:
-                continue
+            print(row.index(i))
+            #if i!="0": #and ((j not in row) or (j not in (row.index(i)) for row in deck)):
+            #    temp_deck.insert(deck[row][i],"4")
+            #else:
+            #    continue
             #if j not in row: # check of missing numbers
             #    available_numbers.append(j)
 
-print(temp_deck)
