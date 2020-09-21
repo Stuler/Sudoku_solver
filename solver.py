@@ -46,15 +46,14 @@ sects = [
     deck[8][6],deck[8][7],deck[8][8]]
     ]
 
-for j in range(1,10):
-    temp_deck = deck
-    for row in temp_deck:
-        for i in row:
-            print(row.index(i))
-            #if i!="0": #and ((j not in row) or (j not in (row.index(i)) for row in deck)):
-            #    temp_deck.insert(deck[row][i],"4")
-            #else:
-            #    continue
-            #if j not in row: # check of missing numbers
-            #    available_numbers.append(j)
+temp_deck = deck
 
+for row in temp_deck:
+    for i in row:
+        if i == 0:
+           row.insert((j for j in range(1,10)) if j not in row)
+           
+
+
+
+print (temp_deck)
